@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>from 태그</title>
+</head>
+<body>
+<form action="test" method="get">
+    <!-- temp?aa=안녕
+        test?bbb=ㅎㅎㅎ-->
+    <!-- name 속성값: 서버로 요청할 때 데이터를 담는 파라미터(변수) 이름-->
+<body>구매 회원가입</body> 
+<small>1가입</small>
+<small>2약관동의</small>
+<small>3정보입력</small>
+<small>4가입완료</small>
+<br>
+    <input type="text" name="ID" placeholder="ID를 만들어주세요"> <br>
+    <input type="password" name="PW" placeholder="비밀번호 입력"> <br>
+    <input type="password" name="PWRE" placeholder="위의 비밀번호를 다시 입력해주세요"> <br>
+    <input type="text" name="NAME" placeholder="이름"><br>
+    <select name="nation">
+        <option selected>010</option>
+        <option value="010">010</option>
+        <option value="011">011</option>
+        <option value="016">016</option>
+        <option value="017">017</option>
+    </option> <input type="text" name="fff" placeholder="휴대폰 번호 입력"><br>
+    <input type="text" name="email" placeholder="이메일">@
+    <select name="domain">
+        <option value="">직접입력</option>
+        <option value="naver.com">naver.com</option>
+        <option value="hanmail.com">hanmail.com</option>
+        <option value="daum.net">daum.net</option> 
+
+    </select><br>
+            
+    <!-- 국가 : <select name="nation">
+        <option selected>선택하세요</option>
+        <option value="korea">대한민국</option>
+        <option value="USA">미국</option>
+        <option value="japen">일본</option>
+        <option value="canada">캐나다</option> -->
+
+
+    </select>
+
+    <!-- 장문의 글을 써야할 때-->
+    <textarea name="contents" cols="10" rows="5"></textarea><br>
+
+<!-- radio버튼-->
+가입유형 :
+<input type="radio" name="jointype" value="personal">
+    <label for="p">개인</label>
+<input type="radio" name="jointype" value="commercial">
+    <label for="c">사업자</label>
+<input type="radio" name="jointype" value="no">해당없음
+<br>
+<!-- 체크박스-->
+활용가능한언어:
+<input type="checkbox" name="lang" value="java">자바
+<input type="checkbox" name="lang" value="mysql">mysql
+<input type="checkbox" name="lang" value="html">html
+<input type="checkbox" name="lang" value="python">python
+<br>
+
+생일:
+<input type="date" name="birth">
+<br>
+
+    <input type="submit" value="처음으로">
+    <input type="submit" value="확인">
+</form>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://127.0.0.1:5500/day01_20211109/ex05_form.html
+http://127.0.0.1:5500/day01_20211109/test?ID=&PW=&PWRE=&NAME=&nation=010&fff=&email=&domain=&contents=&birth=2021-10-21
