@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        const ele1 = document.getElementById('id2')
+        // addEventListener('이벤트 종류', 실행할 함수)
+        // 매개변수 2개
+        ele1.addEventListener('click',function(){
+            console.log('id2가 지정된 요소 클릭됨');
+        });
+        function fun1(){
+            console.log('함수 호출됨.');
+        }
+    </script>
+
+
+</head>
+<body>
+    <p id='id1' onclick="fun1()">오늘은 금요일</p>
+    <p id='id2'>내일은 토요일</p>
+</body>
+</html>
